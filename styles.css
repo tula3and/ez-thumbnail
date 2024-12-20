@@ -1,0 +1,182 @@
+@import "reset.css";
+body {
+  width: 500px;
+  height: 500px;
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.canvas {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#container {
+  width: 250px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.98);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls .controls__range {
+  margin-bottom: 30px;
+}
+
+.selected {
+  border: 2px dotted white;
+}
+
+textarea {
+  width: 100%;
+  height: 55px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+textarea::placeholder {
+  font-family: "Nanum Gothic", serif;
+  color: #bbb;
+}
+
+#jsTextUpdate {
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  right: 5px;
+  border: 0;
+}
+
+.floating__btns {
+  position: fixed;
+  background-color: white;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.floating__btns:active {
+  transform: scale(0.98);
+}
+
+#jsHelp {
+  top: 15px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.hidden__objects {
+  display: none;
+}
+
+#upload__btn {
+  top: 55px;
+  right: 60px;
+  width: 46px;
+  height: 23px;
+  font-size: 20px;
+}
+
+#jsBlurCheckbox {
+  top: 62px;
+  right: 35px;
+}
+
+.side__btns {
+  right: 60px;
+  width: 50px;
+  height: 30px;
+}
+
+#jsDelete {
+  top: 95px;
+}
+
+#jsSaveTemplate {
+  top: 139px;
+  background-color: pink;
+}
+
+#jsLoadTemplate {
+  top: 172px;
+  background-color: pink;
+}
+
+#jsTextCheckbox {
+  bottom: 171px;
+  right: 100px;
+}
+
+#jsRangeValue {
+  bottom: 190px;
+  width: 30px;
+  background-color: lightblue;
+  visibility: hidden;
+}
+
+#jsRangeValue.visible {
+  visibility: visible;
+}
