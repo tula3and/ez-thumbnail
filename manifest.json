@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "EzThumb - 블로그 썸네일 만들기",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Make your blog thumbnail easily! EzThumb으로 쉽게 블로그 썸네일을 만드세요 🖼️",
   "icons": {
     "16": "icons/icon16.png",

@@ -204,6 +204,9 @@ function handleTemplateSave() {
 }
 
 function handleTemplateLoad() {
+  const temp = localStorage.getItem("backgroundColor");
+  if (temp === null) return;
+
   const text = localStorage.getItem("text");
   textarea.value = text;
 
